@@ -17,7 +17,12 @@
     <header class="header">
         <div class="container container-header">
             <a href="./index.html" class="logo"><span class="logo-web">web</span><span class="logo-studio">studio</span></a>
-            <nav>
+            <button type="button" class="mobile-menu-burger">
+                <svg class="mobile-menu-burger-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+            <nav class="header-nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="./index.html" class="nav-page current-page">Studio</a></li>
                     <li class="nav-item"><a href="./portfolio.html" class="nav-page">Portfolio</a></li>
@@ -30,17 +35,70 @@
                 <li class="contact-item"><a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a></li>
             </ul>
         </div>
+
+        <div class="mobile-menu">
+            <button type="button" class="mobile-menu-close-button" data-modal-close>
+                <svg class="mobile-menu-close-svg" width="8" height="8">
+                    <use href="./images/icons.svg#close-modal"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-page current-page">Studio</a></li>
+                <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-page">Portfolio</a></li>
+                <li class="mobile-menu-item"><a href="#" class="mobile-menu-page">Contacts</a></li>
+            </ul>
+
+            <ul class="mobile-menu-contact-list">
+                <li class="mobile-menu-contact-item"><a href="mailto:info@devstudio.com" class="mobile-menu-contact-link">info@devstudio.com</a></li>
+                <li class="mobile-menu-contact-item"><a href="tel:+110001111111" class="mobile-menu-contact-link">+11 (000) 111-11-11</a></li>
+            </ul>
+
+            <ul class="mobile-menu-social-list">
+                <li class="mobile-menu-social-list-item">
+                    <a href="#" class="mobile-menu-social-list-item-link">
+                        <svg class="mobile-menu-social-list-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram-2"></use>
+                        </svg>
+                    </a>
+                </li>
+            
+                <li class="mobile-menu-social-list-item">
+                    <a href="#" class="mobile-menu-social-list-item-link">
+                        <svg class="mobile-menu-social-list-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            
+                <li class="mobile-menu-social-list-item">
+                    <a href="#" class="mobile-menu-social-list-item-link">
+                        <svg class="mobile-menu-social-list-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            
+                <li class="mobile-menu-social-list-item">
+                    <a href="#" class="mobile-menu-social-list-item-link">
+                        <svg class="mobile-menu-social-list-item-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin-1"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <main>
-        <section class="main-section">
+    <!-- <main> -->
+        <!-- <section class="main-section">
             <div class="container main-container">
                 <h1 class="main-title">Effective Solutions for Your Business</h1>
                 <button type="button" class="order-button" data-modal-open>Order Service</button>
             </div>
-        </section>
+        </section> -->
 
-        <section class="advantage-section">
+        <!-- <section class="advantage-section">
             <h2 class="visually-hidden">Our advantages</h2>
             <div class="container advantage-container">
                 <ul class="advantage-list">
@@ -93,9 +151,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="product-seclion">
+        <!-- <section class="product-seclion">
             <div class="container products-container">
                 <h2 class="products-title">What are we doing</h2>
                 <ul class="product-list">
@@ -104,9 +162,9 @@
                     <li class="product-list-item"><img src="./images/img3.jpg" alt="img3" width="360" class="product-list-photo"></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="team-section">
+        <!-- <section class="team-section">
             <div class="container team-comtainer">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
@@ -275,9 +333,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="customers-section">
+        <!-- <section class="customers-section">
             <div class="container customers-container">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="customers-list">
@@ -330,10 +388,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </section> -->
+    <!-- </main> -->
     
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer-container-information">
                 <a href="./index.html" class="logo">
@@ -393,9 +451,9 @@
                 </span>
             </form>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-button" data-modal-close>
                 <svg class="modal-close-svg" width="8" height="8">
@@ -449,8 +507,8 @@
                 <button type="submit" class="modal-form-button-send">Send</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
