@@ -164,6 +164,7 @@ body{
     } */
 
     .mobile-menu {
+        display: flex;
         position: fixed;
         top: 0;
         left: 0;
@@ -175,6 +176,8 @@ body{
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+
+        padding-bottom: 80px;
 
         transition: opacity var(--transition-duration-and-func),
             visibility var(--transition-duration-and-func);
@@ -189,8 +192,10 @@ body{
     .container-mobile-menu {
         position: relative;
         padding-top: 80px;
-        padding-bottom: 40px;
-        padding-left: 25px;
+        padding-left: 40px;
+
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile-menu-close-button {
@@ -228,8 +233,6 @@ body{
         display: flex;
         flex-direction: column;
         gap: 40px;
-
-        margin-bottom: 284px;
     }
 
     .mobile-menu-item {}
@@ -240,12 +243,17 @@ body{
         line-height: 1.1;
     }
 
+    .mobile-menu-bottom{
+        margin-top: auto;
+    }
+
     .mobile-menu-contact-list {
+        margin-top: auto;
         margin-bottom: 48px;
     }
 
     .mobile-menu-contact-item-tel {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
 
     .mobile-menu-contact-item-mail {}
@@ -363,11 +371,11 @@ body{
     }
 
     .contact-link {
-    color: var(--slate-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    transition: color var(--transition-duration-and-func);
+        color: var(--slate-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        transition: color var(--transition-duration-and-func);
     }
     
     .current-page::after {
@@ -562,6 +570,9 @@ body{
 @media screen and (min-width: 1200px) {
     .main-section {
         padding: 188px 0;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main-title {
@@ -625,7 +636,7 @@ screen and (min-width:768px) and (min-resolution: 2dppx) {
         background-image: linear-gradient(to right,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/people-office1-tablet.webp);
+            url(../images/people-office1-desk.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -639,7 +650,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
         background-image: linear-gradient(to right,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/people-office1-@2-tablet.webp);
+            url(../images/people-office1-@2-desk.webp);
     }
 }
 
@@ -962,12 +973,14 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 
 .customers-list-item-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 88px;
 
     border: 1px solid var(--lightslate-color);
     border-radius: 4px;
 
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
     transition: border-color var(--transition-duration-and-func);
 }
 
@@ -1200,8 +1213,8 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 
     .footer-form-email{
-        margin-left: 16px;
-        margin-right: 16px;
+        /* margin-left: 16px;
+        margin-right: 16px; */
         margin-bottom: 16px;
     }
 
