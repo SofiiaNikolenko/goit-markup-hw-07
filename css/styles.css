@@ -691,7 +691,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
 
     .advantage-list-item {
-        width: 396px;
+        /* width: 396px; */
     }
 
     .advantage-list-item-title {
